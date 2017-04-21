@@ -21,12 +21,7 @@ class Automaton(object):
         # loop through commands
         for command in commands:
             self.do_command(command)
-        return self.state    
-        # decide output
-        if self.state == self.states[1]:
-            return True
-        else:
-            return False
+        return self.state==self.states[1]
             
 my_automaton = Automaton()
 
